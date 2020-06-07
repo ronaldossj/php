@@ -21,3 +21,7 @@ print_r($formasGeometricas['Quatrolados']." ".$formasGeometricas['Treslados']." 
 
 $formasGeometricas = ((object)$formasGeometricas);
 print_r($formasGeometricas->Quatrolados);
+
+echo PHP_EOL;
+
+echo ($operandoA > $operandoB) ? "A é Menor" : "B é Menor";
