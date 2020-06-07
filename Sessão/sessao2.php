@@ -2,9 +2,13 @@
 
 require_once("config.php");
 
-session_unset($_SESSION['nome']);
+unset($_SESSION['nome']);
 
-echo $_SESSION['nome'];
+if(isset($_SESSION['nome'])){
+    echo $_SESSION['nome'];
+    die;
+}
+echo "Não há nome definido";
 
 
-session_destroy();
+//session_destroy();
